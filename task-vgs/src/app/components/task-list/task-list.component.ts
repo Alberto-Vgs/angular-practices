@@ -17,13 +17,13 @@ export class TaskListComponent {
     level: Level.Blocking
   }
   task2: ITask = {
-    title: 'Task 1',
+    title: 'Task 2',
     description: 'this is the second task',
     complete: false,
     level: Level.Info
   }
   task3: ITask = {
-    title: 'Task 1',
+    title: 'Task 3',
     description: 'this is the last task',
     complete: true,
     level: Level.Urgent
