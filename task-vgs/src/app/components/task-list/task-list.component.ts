@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ITask, Level } from 'src/app/models/interfaces/Task.interface';
 
 @Component({
@@ -6,7 +6,7 @@ import { ITask, Level } from 'src/app/models/interfaces/Task.interface';
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.scss']
 })
-export class TaskListComponent {
+export class TaskListComponent implements OnInit{
 
 // refactor lista tasks
 
@@ -27,5 +27,14 @@ export class TaskListComponent {
     description: 'this is the last task',
     complete: true,
     level: Level.Urgent
+  }
+
+  ngOnInit(){
+
+  }
+ 
+  deleteTasks(task:ITask){
+    // sustituir por splice function to delete
+    alert("the task " + task.title + " is going to be deleted.")
   }
 }
