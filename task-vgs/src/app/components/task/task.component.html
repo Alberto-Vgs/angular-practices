@@ -1,1 +1,6 @@
-<p>task works!</p>
+<!-- Directivas estruturales y stilos condicionales -->
+<h5>Title: {{task?.title}}</h5>
+<h6>Description: {{task?.description}}</h6>
+<p>Complete?: {{task?.complete ? "Complete":"Incomplete;"}}</p>
+
+<button (click)="delete()">Delete</button>
